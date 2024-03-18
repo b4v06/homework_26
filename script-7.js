@@ -36,7 +36,7 @@ function cafe() {
         for (const order of orders) {
             if (order.table == tableNumber) {
                 for (const dish of order.dishes) {
-                    totalSum += parseFloat(dish.dishPrice);
+                    totalSum += dish.dishPrice;
                 }
             }
         }
